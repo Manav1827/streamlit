@@ -384,6 +384,7 @@ if filtered_templates:
             if st.button("⚡ Use Template", key=f"use_{t['title']}"):
                 st.success(f"✅ Selected {t['title']}")
                 st.session_state["selected_template"] = t
+                st.session_state["uploaded_template_file"] = os.path.join("assets", "templates", t["file"])
                 st.switch_page("pages/4_Templates.py")
             st.markdown("</div>", unsafe_allow_html=True)
 

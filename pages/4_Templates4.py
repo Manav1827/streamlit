@@ -168,3 +168,4 @@ elif mode == "✏️ Edit Selected Template":
             st.download_button("📥 Download Final Image", data=buf.getvalue(), file_name="edited_template.png", mime="image/png")
     else:
         st.info("👈 Please upload both the template image and your image to start.")
+        

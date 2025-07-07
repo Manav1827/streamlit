@@ -319,18 +319,23 @@ st.title("🎨 Template Editor with Person Replace & Text Edit")
 st.sidebar.header("🔧 Upload Files")
 
 
+import os
+
+# 🔁 Check if a template was selected from the gallery
+template_file = None
 if "uploaded_template_file" in st.session_state:
     template_path = st.session_state["uploaded_template_file"]
     if os.path.exists(template_path):
         with open(template_path, "rb") as f:
             template_bytes = f.read()
         template_file = BytesIO(template_bytes)
-        st.sidebar.success("🎉 Template selected from gallery!")
+        st.sidebar.success(f"✅ Loaded template from gallery: {os.path.basename(template_path)}")
     else:
-        st.sidebar.warning("⚠️ Template path is invalid. Please upload manually.")
-        template_file = st.sidebar.file_uploader("Upload Template Image", type=["png", "jpg", "jpeg"], key="template_upload")
+        st.sidebar.warning("⚠️ Template path not found. Please upload manually.")
+        template_file = st.sidebar.file_uploader("Upload Template Image", type=["png", "jpg", "jpeg"])
 else:
-    template_file = st.sidebar.file_uploader("Upload Template Image", type=["png", "jpg", "jpeg"], key="template_upload")
+    template_file = st.sidebar.file_uploader("Upload Template Image", type=["png", "jpg", "jpeg"])
+
 
 user_file = st.sidebar.file_uploader("Upload Your Image", type=["png", "jpg", "jpeg"], key="user_upload")
 

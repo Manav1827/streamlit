@@ -452,3 +452,33 @@ with tab2:
         st.info("✅ No completed projects yet.")
 
 # ================== Summary Bar =========================
+# total_count = len(ongoing) + len(completed)
+
+# st.markdown(f"""
+# <div style='
+#     display: flex;
+#     justify-content: space-around;
+#     background-color: white;
+#     padding: 20px;
+#     border-radius: 20px;
+#     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+#     margin-top: 30px;
+# '>
+#     <div style='text-align:center;'>
+#         <h2 style='color:#6366f1;margin-bottom:5px;'>{total_count}</h2>
+#         <p style='margin:0;color:gray;'>Total Projects</p>
+#     </div>
+
+#     <div style='text-align:center;'>
+#         <h2 style='color:#f59e0b;margin-bottom:5px;'>{len(ongoing)}</h2>
+#         <p style='margin:0;color:gray;'>Ongoing</p>
+#     </div>
+
+#     <div style='text-align:center;'>
+#         <h2 style='color:#10b981;margin-bottom:5px;'>{len(completed)}</h2>
+#         <p style='margin:0;color:gray;'>Completed</p>
+#     </div>
+
+# </div>
+# """, unsafe_allow_html=True)
+
