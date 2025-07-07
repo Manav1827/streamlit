@@ -1,0 +1,26 @@
+{
+    "type": "reel",
+    "text_slides": [
+        "You're Invited to dfdf's Event!",
+        "On fdfdfd at fdfdf",
+        "At dfdfd",
+        "Contact: fdf",
+        "RSVP: dfdf",
+        "Thank You!"
+    ],
+    "images": [
+        "C:\\Users\\PC-16\\AppData\\Local\\Temp\\combined_0_173150475750847660.png",
+        "C:\\Users\\PC-16\\AppData\\Local\\Temp\\combined_1_5747520098360610978.png",
+        "C:\\Users\\PC-16\\AppData\\Local\\Temp\\combined_2_1696282137865780478.png",
+        "C:\\Users\\PC-16\\AppData\\Local\\Temp\\combined_3_7934340350280797658.png",
+        "C:\\Users\\PC-16\\AppData\\Local\\Temp\\combined_4_1045115521202357168.png",
+        "C:\\Users\\PC-16\\AppData\\Local\\Temp\\combined_5_8144083708424212007.png"
+    ],
+    "music_path": "",
+    "output_filename": "output/reel.mp4",
+    "duration": 8,
+    "animation": "confetti",
+    "sticker_paths": [],
+    "sticker_positions": [],
+    "sticker_sizes": []
+}
