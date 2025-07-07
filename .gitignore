@@ -1,6 +1,3 @@
 service_account.json
 client_secret.json
 2.py
-__pycache__/
-*.pyc
-*.exe
